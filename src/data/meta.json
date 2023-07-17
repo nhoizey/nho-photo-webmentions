@@ -1,8 +1,8 @@
 {
     "title": "Webmention Analytics",
     "description": "Webmention Analytics Dashboard",
-    "url": "https://webmentions.mxb.dev",
-    "domain": "mxb.dev",
+    "url": "https://nho-photo-webmentions.netlify.app",
+    "domain": "nicolas-hoizey.photo",
     "lang": "en",
     "locale": "en_us",
     "theme": "dark"
