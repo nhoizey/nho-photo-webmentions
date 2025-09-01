@@ -1,12 +1,15 @@
+@use 'sass:color';
+@use "../utils/variables" as *;
+
 .widget {
     // display: flex;
     // flex-direction: column;
     // flex: 1 0 auto;
 
     padding: 1rem;
-    border: 1px solid darken($gray-darkest, 7%);
+    border: 1px solid color.scale($gray-darkest, $lightness: -30%);
     border-radius: 0.5rem;
-    background-color: darken($gray-darkest, 5%);
+    background-color: color.scale($gray-darkest, $lightness: -25%);
 
     &__title {
         padding-bottom: 0.5rem;

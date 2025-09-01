@@ -1,3 +1,5 @@
+@use "../utils/mixins" as *;
+
 .summary {
     table-layout: fixed;
     width: 100%;

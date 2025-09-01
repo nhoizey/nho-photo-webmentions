@@ -1,9 +1,11 @@
+@use "sass:map";
+
 //--------------------
 // SCSS CUSTOM FUNCTIONS
 //--------------------
 
 @function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
-    $min: map-get($breakpoints, $name);
+    $min: map.get($breakpoints, $name);
     @return if($min != 0, $min, null);
 }
 
@@ -13,5 +15,5 @@
         @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
     }
 
-    @return map-get($z-layers, $layer);
+    @return map.get($z-layers, $layer);
 }

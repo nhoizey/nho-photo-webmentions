@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 //--------------------
 // SCSS VARIABLES
 //--------------------
@@ -43,7 +45,7 @@ $brand-blue: #00bff8;
 $bg-color: $gray-darkest;
 $text-color: $gray-lightest;
 $brand-color-primary: $brand-blue;
-$brand-color-primary-offset: darken($brand-blue, 6%);
+$brand-color-primary-offset: color.scale($brand-blue, $lightness: -28%);
 
 // Typography
 //

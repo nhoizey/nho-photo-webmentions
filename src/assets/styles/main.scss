@@ -6,45 +6,46 @@
 // UTILITIES
 //--------------------
 
-@import 'utils/functions';
-@import 'utils/variables';
-@import 'utils/mixins';
+@use 'utils/functions' as *;
+@use 'utils/variables' as *;
+@use 'utils/mixins' as *;
 
 //--------------------
 // BASE MODULES
 // partials with global scope
 //--------------------
 
-@import 'base/fonts';
-@import 'base/normalize';
-@import 'base/reboot';
-@import 'base/layout';
-@import 'base/typography';
-@import 'base/focus';
-@import 'base/utilities';
-@import 'base/screenreader';
-@import 'base/animation';
+@use 'base/fonts' as *;
+@use 'base/normalize' as *;
+@use 'base/reboot' as *;
+@use 'base/layout' as *;
+@use 'base/typography' as *;
+@use 'base/focus' as *;
+@use 'base/utilities' as *;
+@use 'base/screenreader' as *;
+@use 'base/animation' as *;
 
 //--------------------
 // COMPONENTS
 // partials with local scope to a component
 //--------------------
 
-@import 'components/header';
-@import 'components/footer';
-@import 'components/icon';
-@import 'components/reportlist';
-@import 'components/report';
-@import 'components/widget';
-@import 'components/summary';
-@import 'components/tweetlist';
-@import 'components/table';
-@import 'components/webmentionlist';
-@import 'components/webmention';
+@use 'components/header' as *;
+@use 'components/footer' as *;
+@use 'components/icon' as *;
+@use 'components/reportlist' as *;
+@use 'components/report' as *;
+@use 'components/widget' as *;
+@use 'components/summary' as *;
+@use 'components/tweetlist' as *;
+@use 'components/table' as *;
+@use 'components/webmentionlist' as *;
+@use 'components/webmention' as *;
 
 //--------------------
 // VENDOR
 // third-party styles
 //--------------------
 
-@import 'vendor/chartist';
+@use 'vendor/chartist-0.11.4/chartist' as *;
+

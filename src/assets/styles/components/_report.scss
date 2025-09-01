@@ -1,3 +1,7 @@
+@use 'sass:color';
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
 .report {
     &__banner {
         display: flex;
@@ -21,7 +25,7 @@
         height: 3rem;
         padding: 0.5rem;
         border-radius: 50%;
-        background-color: darken($gray-darkest, 5%);
+        background-color: color.scale($gray-darkest, $lightness: -25%);
 
         &--disabled {
             visibility: hidden;

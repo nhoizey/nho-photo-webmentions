@@ -1,10 +1,14 @@
+@use 'sass:color';
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
 .reportlist {
     &__item {
         position: relative;
         padding: 1rem;
-        border: 1px solid darken($gray-darkest, 7%);
+        border: 1px solid color.scale($gray-darkest, $lightness: -30%);
         border-radius: 0.5rem;
-        background-color: darken($gray-darkest, 5%);
+        background-color: color.scale($gray-darkest, $lightness: -25%);
         margin-bottom: 2rem;
     }
 
